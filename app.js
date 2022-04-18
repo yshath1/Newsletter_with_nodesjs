@@ -38,7 +38,7 @@ const jsonData=JSON.stringify(data);
 const url="https://us8.api.mailchimp.com/3.0/lists/032fd78428";
 const options ={
   method:"POST",
-  auth:"shaka2022:6788387c11aa391287b055f8fff7c03f-us8"
+  auth:"shaka2022:"+apikey
 }
 const request=https.request(url,options,function (response) {
   if (response.statusCode===200) {
@@ -66,7 +66,3 @@ app.listen(port, () => {
 })
 
 
-// list
-// 032fd78428
-
-//6788387c11aa391287b055f8fff7c03f-us8
